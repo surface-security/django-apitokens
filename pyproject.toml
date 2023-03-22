@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "django-apitokens"
-version = "1.0.0"
+version = {attr = "apitokens.VERSION"}
 authors = [
     {name = "InfoSec Engineering", email = "surface@paddypowerbetfair.com"},
 ]
