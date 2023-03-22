@@ -40,6 +40,7 @@ REST_FRAMEWORK = {
     ),
     ...,
 }
+```
 
 - You are set to use tokens generated through this app as a way to login with the DRF framework.
 
