@@ -12,11 +12,6 @@ class Migration(migrations.Migration):
         ('knox', '0008_remove_authtoken_salt'),
     ]
     
-    replaces = [
-        ('apitokens', '0001_initial'),
-        ('apitokens', '0002_migrate_auth_token_to_apitoken'),
-    ]
-    
     operations = [
         migrations.CreateModel(
             name='Token',
