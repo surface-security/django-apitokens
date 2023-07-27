@@ -24,7 +24,7 @@ classifiers = [
     "Topic :: Software Development",
 ]
 dependencies = [
-    "Django >= 3.1, < 4.0",
+    "Django >= 3.1, < 5.0",
     "django-rest-knox == 4.2.0",
 ]
 
