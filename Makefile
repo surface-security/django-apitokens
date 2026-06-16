@@ -1,19 +1,13 @@
 .PHONY: style
 style:
-	black --target-version=py311 \
-	      --line-length=120 \
-		  --skip-string-normalization \
-		  apitokens testapp && \
-	ruff check --fix apitokens testapp
-	
-check_style:
-	black --target-version=py311 \
-	      --line-length=120 \
-		  --skip-string-normalization \
-		  --check \
-		  apitokens testapp && \
-	ruff check apitokens testapp
+	uv run ruff format apitokens testapp
+	uv run ruff check --fix apitokens testapp
 
+.PHONY: style_check
+style_check:
+	uv run ruff format --check apitokens testapp
+	uv run ruff check apitokens testapp
+
+.PHONY: build_lib
 build_lib:
-	pip install .
-	
+	uv build

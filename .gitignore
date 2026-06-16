@@ -60,6 +60,7 @@ target/
 # Misc
 .venv/
 .idea/
+coverage.xml
 *.sw[op]
 .ruff_cache
 .DS_Store

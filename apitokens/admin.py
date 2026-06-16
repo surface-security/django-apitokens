@@ -1,4 +1,3 @@
-
 from django.contrib import admin
 from knox import models as knox_models
 
